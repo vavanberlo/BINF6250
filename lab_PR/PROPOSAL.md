@@ -34,7 +34,7 @@ If data collection option is enabled, data on teams generated should be stored i
 
 I also hope to implement a simple UI for making choices of parameters and desired filters as well as showing results, however, I have not done research in this direction yet.
 
-I will consider the tool a success if it can return sets of teams that meet the criteria set by the weighting system. One way of checking this will be with a report of choices made over many many runs to determine if the algorithm is correctly deprioritizing legendary, starter, unevolved, and popular Pokemon, and not choosing only from a very small pool over time.
+I will consider the tool a success if it can return sets of teams that meet the criteria set by the weighing system. One way of checking this will be with a report of choices made over many many runs to determine if the algorithm is correctly deprioritizing legendary, starter, unevolved, and popular Pokemon, and not choosing only from a very small pool over time.
 
 
 # Pitfall Scan
