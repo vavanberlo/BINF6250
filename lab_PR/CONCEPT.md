@@ -8,7 +8,9 @@
 •	This should be concise enough that a reader can understand the rest of the document without opening PROPOSAL.md. 
 
 I will be building a team generator for the video game series Pokemon. This generator will focus on the generation 1 games to start, with possibility of expansion. This tool will differ from other Pokemon team generators in its focus: teams should be generated to create unique, memorable playthroughs that encourage creativity in developing strategy with the generated Pokemon during the game. Specifically, the tool will focus on creating semi-random teams where Pokemon are weighted by their popularity and individual statistics to promote use of under-utilized team lineups. 
+
 I will be utilizing a randomized algorithm, specifically Gibbs sampling, in order to “randomly” choose Pokemon to add to the team. The team will be scored, and substitutions that increase the team’s “uniqueness” will be swapped in until a suitable team has been generated. 
+
 There are relevant data sets available on Kaggle and elsewhere that I will be utilizing. These datasets about the Pokemon include information I plan on using for the scoring as well as returning information about the chosen team to the user, including Pokemon types, stats, popularity, and other characteristics.  
 
 
@@ -100,6 +102,7 @@ I do not anticipate any large complexity problems with the algorithm. The datase
 •	Outline the kinds of automated tests you will implement (e.g., unit tests for subfunctions, end-to-end tests, property/invariant checks). 
 
 I will craft several subsets of the data. These will include sets of artificially created Pokemon that specifically test the weighing algorithm for a single comparison each: popularity, stat distribution, and type matching. If the algorithm isn’t working correctly, I will expect to see many popular Pokemon added to the teams, or wildly uneven stat distributions, or a narrow range of type coverages.
+
 I will also test the algorithm to check for general convergence trends, since I don’t want it to select one “best” team, rather, a diverse set of teams. I plan to do this with one or more metrics including number of times swaps are resulting in improved team scores over time and “quality” of team score over time. The team score should improve, but still provide a varied set of teams across many runs. 
 
 # 6.	Updated Pitfall and Risk Log 
@@ -110,7 +113,9 @@ I will also test the algorithm to check for general convergence trends, since I 
 
 There is still the problem of if the program is expanded to include new Pokemon. Using these two datasets, any generation of Pokemon could have a team generated for it by changing the generation desired as a parameter. I have reviewed the databases I intend to use and there are some mismatches in input that will have to be rectified. Increasing the number of inputs would require more scrubbing of typos or non-alphanumeric characters. This will need to be done manually.
 Stat weighing might still be a problem. The exact weights for each metric will require fine tuning as I observe the program’s behavior. 
+
 The biggest pitfall I have yet to address is my plan for the user interface. I will attempt to have a GUI, but want to get the bones of the program working before researching how to implement this. Cursory research suggests I may be able to use Streamlit for building a simple GUI so I may try to work with that. It is able to connect and run directly off the GitHub repo so the code can be peer reviewed while being user-friendly.
+
 For the initial conception of this project I was considering adding more output information that would require more databases to be loaded in. This may be feasible still, I will just have to seek the information. As of writing, I did not find suitable readily available databases for things like Pokemon location and would become a much harder task if more generations are added, and it does not add value to the scoring/sampling function which is the main goal of the program. Including a picture of each Pokemon on the team may still be feasible, depending on the final output as text or in a GUI.
 
 # 7.	Generative AI Disclosure (If Used) 
