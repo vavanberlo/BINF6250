@@ -2,7 +2,6 @@ import csv
 import random
 from pprint import pprint
 import statistics
-import matplotlib.pyplot as plt
 import os
 import json
 
@@ -157,20 +156,6 @@ def print_poke(name, pokedex):
     print(name)
     for key, value in pokedex[name].items():
         print(f"{key} : {value}")
-
-
-def plot_histo(data_list):
-    '''Plots a histogram of a thing
-    Params: data_list (list)
-    Return: None
-    '''    
-    
-    plt.hist(data_list, bins=20)
-    plt.title("Histogram of Frequency of Value")
-    plt.xlabel("Value")
-    plt.ylabel("Frequency")
-    
-    plt.show()
 
 
 def choose_poke(team, pokedex):
