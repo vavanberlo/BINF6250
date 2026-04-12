@@ -1,25 +1,2 @@
-Requirements for first implementation:
-
-The following packages are required:
-
-csv
-random
-pprint
-statistics
-matplotlib.pyplot
-os
-
-
-Data files which can be found temporarily in the provided /data/ folder of the git repository:
-
-Two data files in a data folder:
-Pokedex information
-"./data/Complete Pokedex V1.1.csv"
-Found at this link: 
-https://www.kaggle.com/datasets/joshuabetetta/complete-pokedex-v100
-
-Popularity survey results
-"./data/Pokemon Survey Results - Sheet.csv"
-Found at this link: https://docs.google.com/spreadsheets/d/1hvsP3GgXZaGBM1nOy6Px8qy-JhRIihjHrMaYTUnIvZ8/edit?gid=0#gid=0
-
-
+streamlit
+matplotlib
