@@ -32,7 +32,13 @@ The intent of this project was to implement Gibbs sampling in a Pokemon team gen
 
 ## Installation
 
-No installation required. The app can be run at the link above, or the Python notebook can be run locally at `/code/pokemon.ipynb`. Cells are already populated with commands to demonstrate output.
+### Streamlit App
+No installation required. The app can be run directly at the link above.
+
+### Running the Notebook Locally
+The notebook requires Python 3.4.
+
+**To run:** Open `/code/pokemon.ipynb` in Jupyter. Cells are already populated with commands to demonstrate output. Input files must be accessible in the folders specified in the notebook using the naming conventions expected.
 
 ---
 
